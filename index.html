@@ -7,14 +7,13 @@
   <!--this is the body of the html page-->
   <body>
     <p>Please enter the radius Below</p>
-    <input type="text" id="radius" value="radius">
-    <button type="buton" id="area"  value="area" onclick="document.getElementById('radius').innerHTML=area">Area</button>
+    <input type="text" id="radius">
+    <button type="buton" id="area" onclick="document.getElementById('radius').innerHTML= area">Area</button>
     
     <!--THIS IS THE JAVASCRIPT CODE-->
     <script>
       var radius;
-      var area=3.142*radius*radius;
-      document.getElementById("area").innerHTML = area;
+      var area= Math.pow(3.142, radius);
     </script>
   </body>
 
